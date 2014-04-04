@@ -2,9 +2,11 @@
 return [
     'service_manager' => [
         'invokables' => [
-            'Matryoshka\Model\ModelManager' => 'Matryoshka\Model\ModelManager',
             'Matryoshka\Model\ResultSet\ArrayObjectResultSet' => 'Matryoshka\Model\ResultSet\ArrayObjectResultSet',
             'Matryoshka\Model\ResultSet\HydratingResultSet' => 'Matryoshka\Model\ResultSet\HydratingResultSet',
+        ],
+        'factories'  => [
+            'Matryoshka\Model\ModelManager' => 'MatryoshkaModule\Controller\Plugin\Service\ModelFactory',
         ],
         'shared' => array(
             'Matryoshka\Model\ModelManager' => true,
