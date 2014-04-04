@@ -31,9 +31,9 @@
         "psr-0": {
             "MatryoshkaModule": "src/",
             "MatryoshkaModuleTest": "tests/"
-        }
-    },
-    "classmap": [
+        },
+        "classmap": [
         "./Module.php"
-    ]
+       ]
+    }
 }
