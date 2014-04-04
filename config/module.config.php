@@ -14,7 +14,7 @@ return [
     ],
     'controller_plugins' => [
         'factories' => [
-            'model' => 'MatryoshkaModule\Controller\Plugin\Service\ModelFactory',
+            'model' => 'Matryoshka\Module\Controller\Plugin\Service\ModelFactory',
         ],
     ],
 ];

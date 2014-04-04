@@ -15,4 +15,4 @@ if (!file_exists('../vendor/autoload.php')) {
 }
 
 $autoloader = include '../vendor/autoload.php';
-$autoloader->add('MatryoshkaModuleTest', __DIR__);
+$autoloader->add('MatryoshkaTest', __DIR__);

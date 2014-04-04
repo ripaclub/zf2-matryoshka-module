@@ -1,10 +1,10 @@
 <?php
-namespace MatryoshkaModule\Controller\Plugin\Service;
+namespace Matryoshka\Module\Controller\Plugin\Service;
 
 use Zend\ServiceManager\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use Zend\ServiceManager\Exception\ServiceNotCreatedException;
-use MatryoshkaModule\Controller\Plugin\Model;
+use Matryoshka\Module\Controller\Plugin\Model;
 
 class ModelFactory implements FactoryInterface
 {

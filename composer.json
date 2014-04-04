@@ -29,8 +29,8 @@
     ],
     "autoload": {
         "psr-0": {
-            "MatryoshkaModule": "src/",
-            "MatryoshkaModuleTest": "tests/"
+            "Matryoshka": "src/",
+            "MatryoshkaTest": "tests/"
         },
         "classmap": [
         "./Module.php"

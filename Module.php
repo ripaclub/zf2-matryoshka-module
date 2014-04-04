@@ -1,6 +1,6 @@
 <?php
 
-namespace MatryoshkaModule;
+namespace Matryoshka\Module;
 
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;

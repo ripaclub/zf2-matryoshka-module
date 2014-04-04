@@ -1,5 +1,5 @@
 <?php
-namespace MatryoshkaModule\Controller\Plugin;
+namespace Matryoshka\Module\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
 use Matryoshka\Model\Model as MatryoshkaModel;
