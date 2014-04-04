@@ -1,0 +1,24 @@
+{
+    "name": "ripaclub/zf2-matryoshka-module",
+    "description": "ZF2 module for Matryoshka",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Leonardo Grasso",
+            "email": "me@leonardograsso.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+       "phpunit/phpunit": "3.7.*" 
+    },
+    "autoload": {
+        "psr-0": {
+        }
+    },
+    "classmap": [
+        "./Module.php"
+    ]
+}
