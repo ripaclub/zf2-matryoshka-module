@@ -2,7 +2,7 @@
 namespace MatryoshkaModule\Controller\Plugin;
 
 use Zend\Mvc\Controller\Plugin\AbstractPlugin;
-use Matryoshka\Model\Model;
+use Matryoshka\Model\Model as MatryoshkaModel;
 use Matryoshka\Model\ModelManager;
 
 class Model extends AbstractPlugin
@@ -30,11 +30,19 @@ class Model extends AbstractPlugin
 
     /**
      * @param string $name
-     * @return Model
+     * @return MatryoshkaModel
      */
-    public function __invoke($name)
+    public function get($name)
     {
         return $this->getModelManager()->get($name);
+    }
+
+    /**
+     * @return $this
+     */
+    public function __invoke()
+    {
+        return $this;
     }
 
 }
