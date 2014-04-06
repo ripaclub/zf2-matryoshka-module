@@ -1,4 +1,5 @@
 <?php
+
 namespace Matryoshka\Module\Controller\Plugin\Service;
 
 use Zend\ServiceManager\FactoryInterface;
