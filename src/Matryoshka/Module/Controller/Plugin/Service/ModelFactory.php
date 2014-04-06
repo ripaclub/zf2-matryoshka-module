@@ -1,4 +1,5 @@
 <?php
+
 namespace Matryoshka\Module\Controller\Plugin\Service;
 
 use Zend\ServiceManager\FactoryInterface;
@@ -11,7 +12,7 @@ class ModelFactory implements FactoryInterface
     /**
      * {@inheritdoc}
      *
-     * @return Forward
+     * @return Model
      * @throws ServiceNotCreatedException if ModelManager service is not found in application service locator
      */
     public function createService(ServiceLocatorInterface $plugins)
@@ -31,8 +32,8 @@ class ModelFactory implements FactoryInterface
                 'Matryoshka\Model\ModelManager'
             ));
         }
-        $models = $services->get('Matryoshka\Model\ModelManager');
 
+        $models = $services->get('Matryoshka\Model\ModelManager');
         return new Model($models);
     }
 }
