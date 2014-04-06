@@ -4,7 +4,7 @@ namespace MatryoshkaTest\Module\Controller\Plugin;
 
 use Matryoshka\Model\ModelManager;
 use Matryoshka\Module\Controller\Plugin\Model;
-use MatryoshkaTest\TestAsset\Model\Person;
+use MatryoshkaTest\Model\TestAsset\ConcreteAbstractModel;
 
 class ModelTest extends \PHPUnit_Framework_TestCase
 {
@@ -17,7 +17,7 @@ class ModelTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $modelManager = new ModelManager();
-        $modelManager->setService('person', new Person());
+        $modelManager->setService('My\Example\Model', new ConcreteAbstractModel());
         $this->model = new Model($modelManager);
     }
 
@@ -33,7 +33,7 @@ class ModelTest extends \PHPUnit_Framework_TestCase
 
     public function testGet()
     {
-        $p = $this->model->get('person');
-        $this->assertInstanceOf('MatryoshkaTest\TestAsset\Model\Person', $p);
+        $exModel = $this->model->get('My\Example\Model');
+        $this->assertInstanceOf('MatryoshkaTest\Model\TestAsset\ConcreteAbstractModel', $exModel);
     }
 }
