@@ -2,7 +2,6 @@
     "name": "ripaclub/zf2-matryoshka-module",
     "description": "ZF2 module for Matryoshka",
     "license": "BSD-2-Clause",
-    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Leonardo Grasso",
