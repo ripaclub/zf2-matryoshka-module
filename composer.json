@@ -11,8 +11,8 @@
     ],
     "require": {
         "php": ">=5.4",
-        "ripaclub/matryoshka": "dev-develop",
-        "ripaclub/matryoshka-wrappers": "dev-develop"
+        "ripaclub/matryoshka": "dev-master",
+        "ripaclub/matryoshka-wrappers": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "3.7.*",
